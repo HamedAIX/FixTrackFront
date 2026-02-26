@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/useAuth";
 import "./Navbar.css";
 
@@ -19,11 +19,42 @@ function Navbar() {
           FixTrack
         </Link>
         <div className="navbar-links">
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+          >
+            الرئيسية
+          </NavLink>
+          <NavLink
+            to="/track-order"
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+          >
+            تتبع الطلب
+          </NavLink>
+
           {adminLoggedIn ? (
-            <button type="button" onClick={handleLogout} className="logout-btn">
-              تسجيل الخروج
-            </button>
-          ) : null}
+            <>
+              <NavLink
+                to="/dashboard"
+                className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+              >
+                لوحة الأدمن
+              </NavLink>
+              <button type="button" onClick={handleLogout} className="logout-btn">
+                تسجيل الخروج
+              </button>
+            </>
+          ) : (
+            <NavLink
+              to="/admin"
+              className={({ isActive }) =>
+                `nav-link login-link ${isActive ? "active" : ""}`
+              }
+            >
+              دخول الأدمن
+            </NavLink>
+          )}
         </div>
       </div>
     </nav>
