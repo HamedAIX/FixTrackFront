@@ -41,39 +41,6 @@
   flex-wrap: wrap;
 }
 
-.nav-link {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.85);
-  font-family: var(--font-main);
-  font-size: 0.95rem;
-  padding: 0.5rem 0.75rem;
-  border-radius: 4px;
-  transition: all 0.2s ease;
-}
-
-.nav-link:hover {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-.nav-link.active {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.22);
-}
-
-.login-link {
-  background-color: var(--color-primary-dark);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.login-link:hover {
-  background-color: rgba(255, 255, 255, 0.25);
-}
-
-.login-link.active {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
 .logout-btn {
   background-color: transparent;
   color: white;
@@ -111,11 +78,6 @@
     gap: 0.5rem;
     justify-content: center;
   }
-
-  .nav-link {
-    font-size: 0.85rem;
-    padding: 0.4rem 0.6rem;
-  }
 }
 
 
@@ -127,11 +89,6 @@
   .logo {
     font-size: 1.1rem;
     margin-bottom: 0.4rem;
-  }
-
-  .nav-link {
-    font-size: 0.75rem;
-    padding: 0.3rem 0.5rem;
   }
 
   .logout-btn {
