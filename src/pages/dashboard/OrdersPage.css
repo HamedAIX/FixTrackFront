@@ -1,0 +1,150 @@
+
+.orders-page {
+  padding: 2rem;
+  direction: rtl;
+}
+
+.orders-page h1 {
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: var(--color-bg-card);
+  border-radius: 8px;
+  box-shadow: var(--shadow-card);
+}
+
+.search-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-box .input-group {
+  margin-bottom: 0;
+}
+
+.search-box .input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-main);
+  color: var(--color-text-dark);
+  font-weight: 500;
+}
+
+.search-box .input-group input {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-family: var(--font-main);
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.search-box .input-group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.search-box .input-group input::placeholder {
+  color: var(--color-text-light);
+}
+
+
+.sort-controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.sort-select {
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-family: var(--font-main);
+  font-size: 0.9rem;
+  color: var(--color-text-dark);
+  background-color: #fff;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.sort-controls .btn {
+  padding: 0.625rem 0.875rem;
+  min-width: 45px;
+  font-size: 1rem;
+}
+
+
+.results-info {
+  margin-bottom: 1rem;
+}
+
+.results-info p {
+  font-family: var(--font-main);
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 1024px) {
+  .orders-page {
+    padding: 1.5rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .orders-page {
+    padding: 1rem;
+  }
+
+  .orders-page h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .filters-container {
+    flex-direction: column;
+    padding: 0.75rem;
+  }
+
+  .search-box {
+    min-width: 100%;
+  }
+
+  .sort-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sort-select {
+    flex: 1;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .orders-page {
+    padding: 0.75rem;
+  }
+
+  .orders-page h1 {
+    font-size: 1.25rem;
+  }
+}

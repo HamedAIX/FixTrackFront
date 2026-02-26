@@ -1,0 +1,336 @@
+
+.track-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px);
+  padding: 2rem;
+  direction: rtl;
+}
+
+.track-order h1 {
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+.track-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #f3f4f6;
+  padding: 0.25rem;
+  border-radius: 8px;
+}
+
+.toggle-btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background-color: transparent;
+  color: var(--color-text-light);
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn.active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.toggle-btn:hover:not(.active) {
+  background-color: #e5e7eb;
+}
+
+
+.search-type-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.search-type-toggle button {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background-color: white;
+  color: var(--color-text-light);
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.search-type-toggle button.active {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+
+.track-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--color-bg-card);
+  box-shadow: var(--shadow-card);
+}
+
+.track-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.track-card .input-group {
+  margin-bottom: 1rem;
+}
+
+.track-card .input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-main);
+  color: var(--color-text-dark);
+  font-weight: 500;
+}
+
+.track-card .input-group input,
+.track-card .input-group textarea,
+.track-card .input-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.track-card .input-group input:focus,
+.track-card .input-group textarea:focus,
+.track-card .input-group select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.track-card .input-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.service-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.track-card .btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.track-card .btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.track-card .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.success-message {
+  background-color: #d1fae5;
+  color: #059669;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.error-card {
+  width: 100%;
+  max-width: 450px;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fee2e2;
+  border: 1px solid #fecaca;
+}
+
+.error-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.error-icon {
+  font-size: 1.5rem;
+}
+
+.error-content p {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+
+.result-card {
+  width: 100%;
+  max-width: 450px;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--color-bg-card);
+  box-shadow: var(--shadow-card);
+}
+
+.order-info h2 {
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.info-row .label {
+  color: var(--color-text-light);
+  font-weight: 500;
+}
+
+.info-row .value {
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+
+.info-row .value.price {
+  color: var(--color-primary);
+  font-size: 1.125rem;
+}
+
+
+.status-section {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--color-border);
+}
+
+.status-section h3 {
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.status-icon {
+  font-size: 1.25rem;
+}
+
+.status-text {
+  color: white;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.status-message {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-text-dark);
+  font-weight: 500;
+  padding: 0.75rem;
+  background-color: #f9fafb;
+  border-radius: 4px;
+}
+
+.failure-reason {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #fee2e2;
+  border-radius: 4px;
+  color: #dc2626;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+
+@media (max-width: 480px) {
+  .track-order {
+    padding: 1rem;
+  }
+
+  .track-order h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .track-card {
+    padding: 1.5rem;
+  }
+
+  .result-card {
+    padding: 1rem;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .search-type-toggle {
+    flex-wrap: wrap;
+  }
+}

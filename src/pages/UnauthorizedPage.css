@@ -1,0 +1,82 @@
+
+.unauthorized-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px);
+  padding: 2rem;
+  direction: rtl;
+}
+
+.unauthorized-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  background-color: var(--color-bg-card);
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.unauthorized- {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.unauthorized-card h1 {
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.unauthorized-card p {
+  color: var(--color-text-light);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.unauthorized-actions {
+  margin-top: 1rem;
+}
+
+.unauthorized-actions .btn {
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.unauthorized-actions .btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+
+@media (max-width: 480px) {
+  .unauthorized-page {
+    padding: 1rem;
+  }
+
+  .unauthorized-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .unauthorized- {
+    font-size: 3rem;
+  }
+
+  .unauthorized-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .unauthorized-card p {
+    font-size: 0.875rem;
+  }
+}
